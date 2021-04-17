@@ -1,0 +1,46 @@
+<!-- xipison491@0pppp.com -->
+<!-- blahblah28 -->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div class="container">
+            <button class = "calcbutton" value=0 onclick="butvalue(this.value)">0</button>
+            <button class = "calcbutton" value=1 onclick="butvalue(this.value)">1</button>
+            <button class = "calcbutton" value=2 onclick="butvalue(this.value)">2</button>
+            <button class = "calcbutton" value=3 onclick="butvalue(this.value)">3</button>
+            <button class = "calcbutton" value=4 onclick="butvalue(this.value)">4</button>
+            <button class = "calcbutton" value=5 onclick="butvalue(this.value)">5</button>
+            <button class = "calcbutton" value=6 onclick="butvalue(this.value)">6</button>
+            <button class = "calcbutton" value=7 onclick="butvalue(this.value)">7</button>
+            <button class = "calcbutton" value=8 onclick="butvalue(this.value)">8</button>
+            <button class = "calcbutton" value=9 onclick="butvalue(this.value)">9</button>
+            <button class = "calcbutton" value="+" onclick="opvalue(this.value)">+</button>
+            <button class = "calcbutton" value="x" onclick="opvalue(this.value)">x</button>
+            <button class = "calcbutton" value="-" onclick="opvalue(this.value)">-</button>
+            <button class = "calcbutton" value="/" onclick="opvalue(this.value)">/</button>
+            <button class = "calcbutton" value="=" onclick="resultcalc()">=</button>
+            <button class = "calcbutton" value="." onclick="butvalue(this.value)">.</button>
+            <button class = "calcbutton" value="AC" onclick="scorediv.textContent=0">AC</button>
+            <div id = "resultdisp"></div>
+        </div>
+        <style>
+            .container{
+                display:grid;
+                grid-template-columns: repeat(4,100px);
+                grid-template-rows: repeat(5,50px);
+                grid-gap: 20px;
+            }
+            .calcbutton{
+                border: 2px solid black;
+                text-align: center;
+            }
+            .resultdisp{
+                grid-column: span 3 ;
+                border: 2px solid black;
+            }
+
+        </style>
+    <script src=calculator.js></script>
+    </body>
+</html>
